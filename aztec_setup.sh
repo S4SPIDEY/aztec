@@ -48,7 +48,7 @@ read -p "Enter Eth_Sepolia_RPC URL: " ETH_SEPOLIA_RPC
 read -p "Enter Eth-beacon_sepolia_RPC URL: " ETH_BEACON_SEPOLIA_RPC
 
 
-read -p "Enter wallet private key (add 0x at start): " SEQUENCER_PRIVATE_KEY
+read -p "Enter wallet private key (add 0x at start): " WALLET_PRIVATE_KEY
 read -p "Enter your wallet address (YourAddress): " WALLET_ADDRESS
 read -p "Enter your P2P IP address: " P2P_IP
 
@@ -56,7 +56,7 @@ aztec start --node --archiver --sequencer \
   --network alpha-testnet \
   --l1-rpc-urls "$ETH_SEPOLIA_RPC" \
   --l1-consensus-host-urls "$ETH_BEACON_SEPOLIA_RPC" \
-  --sequencer.validatorPrivateKey "$SEQUENCER_PRIVATE_KEY" \
-  --sequencer.coinbase "$COINBASE_ADDRESS" \
+  --sequencer.validatorPrivateKey "$WALLET_PRIVATE_KEY" \
+  --sequencer.coinbase "$WALLET_ADDRESS" \
   --p2p.p2pIp "$P2P_IP" \
   --p2p.maxTxPoolSize 1000000000
