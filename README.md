@@ -9,3 +9,6 @@ curl -O https://raw.githubusercontent.com/S4SPIDEY/aztec/refs/heads/main/aztec_s
 
 ctrl + A D
 
+```
+https://raw.githubusercontent.com/S4SPIDEY/aztec/refs/heads/main/backup.sh
+```
