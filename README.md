@@ -10,7 +10,7 @@ curl -O https://raw.githubusercontent.com/S4SPIDEY/aztec/refs/heads/main/aztec_s
 ctrl + A D
 
 ```
-curl -O https://raw.githubusercontent.com/S4SPIDEY/aztec/refs/heads/main/aztec_setup.sh && chmod +x az_backup.sh && ./az_backup.sh
+curl -O https://raw.githubusercontent.com/S4SPIDEY/aztec/refs/heads/main/az_backup.sh && chmod +x az_backup.sh && ./az_backup.sh
 ```
 
 ```
