@@ -28,5 +28,4 @@ curl -O https://raw.githubusercontent.com/S4SPIDEY/aztec/refs/heads/main/aztec_r
 
 ```
 ./aztec_restart.sh
-
 ```
