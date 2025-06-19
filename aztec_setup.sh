@@ -27,7 +27,6 @@ bash -i <(curl -s https://install.aztec.network)
 echo 'export PATH="$HOME/.aztec/bin:$PATH"' >> ~/.bashrc
 source ~/.bashrc
 
-aztec -h
 aztec-up latest
 
 # Firewall setup
