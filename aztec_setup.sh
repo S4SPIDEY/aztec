@@ -1,6 +1,4 @@
 #!/bin/bash
-set -e
-
 sudo apt-get update && sudo apt-get upgrade -y
 
 curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
@@ -21,8 +19,7 @@ DOCKER_COMPOSE_VERSION=$(curl -s https://api.github.com/repos/docker/compose/rel
 sudo curl -L "https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
 
-docker --version
-docker-compose --version
+docker --version && docker-compose --version
 
 # Aztec CLI install
 bash -i <(curl -s https://install.aztec.network)
