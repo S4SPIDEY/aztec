@@ -11,7 +11,7 @@ curl -O https://raw.githubusercontent.com/S4SPIDEY/aztec/refs/heads/main/aztec_s
 
 ctrl + A D
 
-# Backup
+# Backup after 3-4 hours
 
 ```
 curl -O https://raw.githubusercontent.com/S4SPIDEY/aztec/refs/heads/main/az_backup.sh && chmod +x az_backup.sh && ./az_backup.sh
@@ -21,7 +21,7 @@ curl -O https://raw.githubusercontent.com/S4SPIDEY/aztec/refs/heads/main/az_back
 [ -f "az_backup.sh" ] && rm az_backup.sh;
 ```
 
-# Restart 
+# Restart in case of crashed
 
 ```
 ./start_aztec_node.sh
