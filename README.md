@@ -22,10 +22,7 @@ curl -O https://raw.githubusercontent.com/S4SPIDEY/aztec/refs/heads/main/az_back
 ```
 
 # Restart 
-```
-curl -O https://raw.githubusercontent.com/S4SPIDEY/aztec/refs/heads/main/aztec_restart.sh && chmod +x aztec_restart.sh
-```
 
 ```
-./aztec_restart.sh
+./start_aztec_node.sh
 ```
