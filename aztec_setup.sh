@@ -14,6 +14,7 @@ if ! command -v docker &> /dev/null; then
   curl -fsSL https://get.docker.com -o get-docker.sh
   sh get-docker.sh
   sudo usermod -aG docker $USER
+  newgrp docker
   rm get-docker.sh
   echo -e "${GREEN}${BOLD}Docker installed successfully!${RESET}"
 fi
@@ -24,6 +25,7 @@ if ! getent group docker > /dev/null; then
 fi
 
 sudo usermod -aG docker $USER
+newgrp docker
 
 if [ -S /var/run/docker.sock ]; then
   sudo chmod 666 /var/run/docker.sock
